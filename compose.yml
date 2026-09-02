@@ -1,13 +1,15 @@
- services:
-   api-students:
-     build: ./api-students 
-     ports:
-       - 8000:8000
-   websimple:
-     build: ./websimple
-     ports:
-       - 8080:80
+services:
+  api-students:
+    build: ./api-students 
+    ports:
+      - 8000:8000
+
+  websimple:
+    build: ./websimple
+    ports:
+      - 8080:80
+
   webplantilla:
-      build: ./webplantilla
-      ports:
-       - 8081:80
+    build: ./webplantilla
+    ports:
+      - 8081:80
